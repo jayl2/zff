@@ -1,0 +1,316 @@
+
+
+.title{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Titan One';
+    margin-top:0;
+    margin-bottom: 55px;
+}
+
+
+.directions{
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right: auto;
+    position:absolute;
+    width: 30%;
+    bottom:30%;
+    background-color: rgba(143,188,143, .7);
+    text-align: center;
+    padding: 80px;
+    border: solid rgb(116, 184, 127);
+    border-width: 20px;
+    border-radius: 20px;
+    font-family: 'Titan One', cursive;
+    color: rgb(35, 137, 93);
+}
+
+body{
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('images/farm2.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+    margin: 5%;
+}
+    
+    
+
+
+#gotit{
+    font-family: 'Titan One', cursive;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button{
+    font-family: 'Titan One', cursive;
+    background-color: rgba(116, 184, 127, .8);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: solid #40e495;
+    border-width: 5px;
+    border-radius: 10%;
+
+    /* ------ */
+    /* @keyframes tilt-shaking {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(5deg); }
+        50% { transform: rotate(0eg); }
+        75% { transform: rotate(-5deg); }
+        100% { transform: rotate(0deg); }
+      } */
+}
+
+button:hover{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 1;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+
+
+.letter-buttons{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    row-gap: 90px;
+    column-gap: 100px;
+}
+
+.letBut{
+    width: 10%;
+    text-align: center;
+    
+}
+
+
+/* .anipic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.animal{
+display: block;
+left: 0;
+right: 0;
+margin-left:auto;
+margin-right: auto;
+position:absolute;
+width: 40%;
+bottom: 30%;
+border: solid rgb(39, 69, 39);
+border-width: 10px;
+border-radius: 30%;
+height: 400px;
+}
+
+.animal:hover{
+    cursor: pointer;
+}
+::placeholder{
+    color:white;
+    opacity: 0.5;
+}
+.inputStyle{
+    width: 40%;
+    height: 50px;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    margin-left:auto;
+    margin-right: auto;
+    position:absolute;
+    background-color: darkseagreen;
+    border: solid darkslategray;
+    border-width: 5px;
+    text-align:center;
+    font-family: 'titan one';
+    font-size: 2rem;
+    color: white;
+}
+
+#ant, #a-text, #b-text, #c-text, 
+#d-text, #e-text, #f-text, #s-text,#g-text,#h-text,#i-text,
+#j-text,#k-text,#l-text,#m-text,#n-text,#o-text,#p-text,#q-text,#r-text,#t-text,
+#u-text,#v-text,#w-text,#x-text,#y-text,#z-text{
+    display:none;
+}
+
+#bear{
+    display:none;
+}
+
+#cat{
+    display:none;
+}
+
+#dog{
+    display:none;
+}
+
+#eel{
+    display:none;
+}
+
+#snake, #fish, #goat, #horse, #iguana, #jaguar,
+#koala, #lion, #monkey, #newt, #octopus, #panther,
+#quail, #rabbit, #tiger, #unicorn, #viper, #walrus, #xerus, #yak, #zebra{
+    display:none;
+}
+
+
+@keyframes spaceboot {
+    0% { transform: translate(2px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(0px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(2px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(2px, 2px) rotate(0deg); }
+    100% {transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+    .shakes:hover {
+        animation-name: spaceboot;
+        animation-duration: 0.8s;
+        transform-origin: 50% 50%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .shake {
+        -webkit-animation-name: spaceboot;
+        -webkit-animation-duration: 0.8s;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+
+    }
+
+      /* ---------------------------------------------media Q------------------------------------------------------ */
+@media screen and (max-width: 550px){
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('images/farm2.jpeg');
+        background-repeat: no-repeat;
+        background-size:cover ;
+        margin: 10%;
+    }
+    
+
+.title{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Titan One';
+    margin-top:0;
+    margin-bottom: 5px;
+    }
+
+button{
+    font-size: 1.5rem;
+    }
+
+.letter-buttons{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    row-gap: 10px;
+    column-gap: 15px;
+}
+
+.animal{
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right: auto;
+    position:absolute;
+    width: 40%;
+    bottom: 50%;
+    border: solid rgb(39, 69, 39);
+    border-width: 10px;
+    border-radius: 30%;
+    height: 250px;
+    }
+
+.inputStyle{
+    width: 60%;
+    height: 50px;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 40%;
+    margin-left:auto;
+    margin-right: auto;
+    position:absolute;
+    background-color: darkseagreen;
+    border: solid darkslategray;
+    border-width: 5px;
+    text-align:center;
+    font-family: 'titan one';
+    font-size: 1.25rem;
+    color: white;
+    }
+
+
+@-webkit-keyframes spaceboot {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+    .shakes:hover {
+        animation-name: spaceboot;
+        animation-duration: 0.8s;
+        transform-origin: 50% 50%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      } 
+
+
+}
+    
