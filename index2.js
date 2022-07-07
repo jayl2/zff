@@ -156,238 +156,274 @@ animalClick(z, zebra, zebraInp)
 const ltrBtn = document.querySelectorAll('.letBut')
 
 //
-//
-//
-//
-//
 //-----------------------KeyPress Listeners------------------------------
 // answer correct to hide ant
 
 document.addEventListener('keydown', function (eve) {
   if (eve.key === 'Enter') {
-    if (antInp.value === 'ant') {
-      score++
-      console.log('a' + score)
+    if (
+      antInp.value === 'ant' ||
+      antInp.value === 'Ant' ||
+      antInp.value === 'ANT'
+    ) {
       ant.style.display = 'none'
       antInp.style.display = 'none'
       boxClicked = ''
       antInp.value = ''
-      a.style.display = 'none'
+      a.style.backgroundColor = 'gray'
     }
-    if (bearInp.value === 'bear') {
-      score++
-      console.log('b' + score)
+    if (
+      bearInp.value === 'bear' ||
+      bearInp.value === 'BEAR' ||
+      bearInp.value === 'Bear'
+    ) {
       bear.style.display = 'none'
       bearInp.style.display = 'none'
       boxClicked = ''
-      b.style.display = 'none'
+      b.style.backgroundColor = 'gray'
     }
-    if (catInp.value === 'cat') {
-      score++
-      console.log('c' + score)
+    if (
+      catInp.value === 'cat' ||
+      catInp.value === 'CAT' ||
+      catInp.value === 'Cat'
+    ) {
       cat.style.display = 'none'
       catInp.style.display = 'none'
       boxClicked = ''
-      c.style.display = 'none'
+      c.style.backgroundColor = 'gray'
     }
-    if (dogInp.value === 'dog') {
-      score++
-      console.log('d' + score)
+    if (
+      dogInp.value === 'dog' ||
+      dogInp.value === 'Dog' ||
+      dogInp.value === 'DOG'
+    ) {
       dog.style.display = 'none'
       dogInp.style.display = 'none'
       boxClicked = ''
-      d.style.display = 'none'
+      d.style.backgroundColor = 'gray'
     }
-    if (eelInp.value === 'eel') {
-      score++
-      console.log('e' + score)
+    if (
+      eelInp.value === 'eel' ||
+      eelInp.value === 'Eel' ||
+      eelInp.value === 'EEL'
+    ) {
       eel.style.display = 'none'
       eelInp.style.display = 'none'
       boxClicked = ''
-      e.style.display = 'none'
+      e.style.backgroundColor = 'gray'
     }
-    if (snakeInp.value === 'snake') {
-      score++
-      console.log('s' + score)
+    if (
+      snakeInp.value === 'snake' ||
+      snakeInp.value === 'SNAKE' ||
+      snakeInp.value === 'Snake'
+    ) {
       snake.style.display = 'none'
       snakeInp.style.display = 'none'
       boxClicked = ''
-      s.style.display = 'none'
+      s.style.backgroundColor = 'gray'
     }
-    if (fishInp.value === 'fish') {
-      score++
-      console.log('f' + score)
+    if (
+      fishInp.value === 'fish' ||
+      fishInp.value === 'Fish' ||
+      fishInp.value === 'FISH'
+    ) {
       fish.style.display = 'none'
       fishInp.style.display = 'none'
       boxClicked = ''
-      f.style.display = 'none'
+      f.style.backgroundColor = 'gray'
     }
-    if (goatInp.value === 'goat') {
-      score++
-      console.log('g' + score)
+    if (
+      goatInp.value === 'goat' ||
+      goatInp.value === 'Goat' ||
+      goatInp.value === 'GOAT'
+    ) {
       goat.style.display = 'none'
       goatInp.style.display = 'none'
       boxClicked = ''
-      g.style.display = 'none'
+      g.style.backgroundColor = 'gray'
     }
-    if (horseInp.value === 'horse') {
-      score++
-      console.log('h' + score)
+    if (
+      horseInp.value === 'horse' ||
+      horseInp.value === 'Horse' ||
+      horseInp.value === 'HORSE'
+    ) {
       horse.style.display = 'none'
       horseInp.style.display = 'none'
       boxClicked = ''
-      h.style.display = 'none'
+      h.style.backgroundColor = 'gray'
     }
-    if (iguanaInp.value === 'iguana') {
-      score++
-      console.log('j' + score)
+    if (
+      iguanaInp.value === 'iguana' ||
+      iguanaInp.value === 'IGUANA' ||
+      iguanaInp.value === 'Iguana'
+    ) {
       iguana.style.display = 'none'
       iguanaInp.style.display = 'none'
       boxClicked = ''
-      i.style.display = 'none'
+      i.style.backgroundColor = 'gray'
     }
-    if (jaguarInp.value === 'jaguar') {
-      score++
-      console.log('j' + score)
+    if (
+      jaguarInp.value === 'jaguar' ||
+      jaguarInp.value === 'JAGUAR' ||
+      jaguarInp.value === 'Jaguar'
+    ) {
       jaguar.style.display = 'none'
       jaguarInp.style.display = 'none'
       boxClicked = ''
-      j.style.display = 'none'
+      j.style.backgroundColor = 'gray'
     }
-    if (koalaInp.value === 'koala') {
-      score++
-      console.log('k' + score)
+    if (
+      koalaInp.value === 'koala' ||
+      koalaInp.value === 'KOALA' ||
+      koalaInp.value === 'Koala'
+    ) {
       koala.style.display = 'none'
       koalaInp.style.display = 'none'
       boxClicked = ''
-      k.style.display = 'none'
+      k.style.backgroundColor = 'gray'
     }
-    if (lionInp.value === 'lion') {
-      score++
-      console.log('l' + score)
+    if (
+      lionInp.value === 'lion' ||
+      lionInp.value === 'Lion' ||
+      lionInp.value === 'LION'
+    ) {
       lion.style.display = 'none'
       lionInp.style.display = 'none'
       boxClicked = ''
-      l.style.display = 'none'
+      l.style.backgroundColor = 'gray'
     }
-    if (monkeyInp.value === 'monkey') {
-      score++
-      console.log('m' + score)
+    if (
+      monkeyInp.value === 'monkey' ||
+      monkeyInp.value === 'MONKEY' ||
+      monkeyInp.value === 'Monkey'
+    ) {
       monkey.style.display = 'none'
       monkeyInp.style.display = 'none'
       boxClicked = ''
-      m.style.display = 'none'
+      m.style.backgroundColor = 'gray'
     }
-    if (newtInp.value === 'newt') {
-      score++
-      console.log('n' + score)
+    if (
+      newtInp.value === 'newt' ||
+      newtInp.value === 'NEWT' ||
+      newtInp.value === 'Newt'
+    ) {
       newt.style.display = 'none'
       newtInp.style.display = 'none'
       boxClicked = ''
-      n.style.display = 'none'
+      n.style.backgroundColor = 'gray'
     }
-    if (octopusInp.value === 'octopus') {
-      score++
-      console.log('o' + score)
+    if (
+      octopusInp.value === 'octopus' ||
+      octopusInp.value === 'OCTOPUS' ||
+      octopusInp.value === 'Octopus'
+    ) {
       octopus.style.display = 'none'
       octopusInp.style.display = 'none'
       boxClicked = ''
-      o.style.display = 'none'
+      o.style.backgroundColor = 'gray'
     }
-    if (pantherInp.value === 'panther') {
-      score++
-      console.log('p' + score)
+    if (
+      pantherInp.value === 'panther' ||
+      pantherInp.value === 'PANTHER' ||
+      pantherInp.value === 'Panther'
+    ) {
       panther.style.display = 'none'
       pantherInp.style.display = 'none'
       boxClicked = ''
-      p.style.display = 'none'
+      p.style.backgroundColor = 'gray'
     }
-    if (quailInp.value === 'quail') {
-      score++
-      console.log('q' + score)
+    if (
+      quailInp.value === 'quail' ||
+      quailInp.value === 'QUAIL' ||
+      quailInp.value === 'Quail'
+    ) {
       quail.style.display = 'none'
       quailInp.style.display = 'none'
       boxClicked = ''
-      q.style.display = 'none'
+      q.style.backgroundColor = 'gray'
     }
-    if (rabbitInp.value === 'rabbit') {
-      score++
-      console.log('r' + score)
+    if (
+      rabbitInp.value === 'rabbit' ||
+      rabbitInp.value === 'RABBIT' ||
+      rabbitInp.value === 'Rabbit'
+    ) {
       rabbit.style.display = 'none'
       rabbitInp.style.display = 'none'
       boxClicked = ''
-      r.style.display = 'none'
+      r.style.backgroundColor = 'gray'
     }
-    if (tigerInp.value === 'tiger') {
-      score++
-      console.log('t' + score)
+    if (
+      tigerInp.value === 'tiger' ||
+      tigerInp.value === 'TIGER' ||
+      tigerInp.value === 'Tiger'
+    ) {
       tiger.style.display = 'none'
       tigerInp.style.display = 'none'
       boxClicked = ''
-      t.style.display = 'none'
+      t.style.backgroundColor = 'gray'
     }
-    if (unicornInp.value === 'unicorn') {
-      score++
-      console.log('u' + score)
+    if (
+      unicornInp.value === 'unicorn' ||
+      unicornInp.value === 'UNICORN' ||
+      unicornInp.value === 'Unicorn'
+    ) {
       unicorn.style.display = 'none'
       unicornInp.style.display = 'none'
       boxClicked = ''
-      u.style.display = 'none'
+      u.style.backgroundColor = 'gray'
     }
-    if (viperInp.value === 'viper') {
-      score++
-      console.log('v' + score)
+    if (
+      viperInp.value === 'viper' ||
+      viperInp.value === 'VIPER' ||
+      viperInp.value === 'Viper'
+    ) {
       viper.style.display = 'none'
       viperInp.style.display = 'none'
       boxClicked = ''
-      v.style.display = 'none'
+      v.style.backgroundColor = 'gray'
     }
-    if (walrusInp.value === 'walrus') {
-      score++
-      console.log('w' + score)
+    if (
+      walrusInp.value === 'walrus' ||
+      walrusInp.value === 'Walrus' ||
+      walrusInp.value === 'WALRUS'
+    ) {
       walrus.style.display = 'none'
       walrusInp.style.display = 'none'
       boxClicked = ''
-      w.style.display = 'none'
+      w.style.backgroundColor = 'gray'
     }
-    if (xerusInp.value === 'xerus') {
-      score++
-      console.log('x' + score)
+    if (
+      xerusInp.value === 'xerus' ||
+      xerusInp.value === 'XERUS' ||
+      xerusInp.value === 'Xerus'
+    ) {
       xerus.style.display = 'none'
       xerusInp.style.display = 'none'
       boxClicked = ''
-      x.style.display = 'none'
+      x.style.backgroundColor = 'gray'
     }
-    if (yakInp.value === 'yak') {
-      score++
-      console.log('y' + score)
+    if (
+      yakInp.value === 'yak' ||
+      yakInp.value === 'YAK' ||
+      yakInp.value === 'Yak'
+    ) {
       yak.style.display = 'none'
       yakInp.style.display = 'none'
       boxClicked = ''
-      y.style.display = 'none'
+      y.style.backgroundColor = 'gray'
     }
 
-    if (zebraInp.value === 'zebra') {
-      score++
-      console.log('z' + score)
+    if (
+      zebraInp.value === 'zebra' ||
+      zebraInp.value === 'ZEBRA' ||
+      zebraInp.value === 'Zebra'
+    ) {
       zebra.style.display = 'none'
       zebraInp.style.display = 'none'
       boxClicked = ''
       z.style.display = 'none'
     }
-    // if (score == 3) {
-    //   alert('You know your animals!')
-    // }
   }
 })
 
-// for (let i = 0; i < allBtns.length; i++) {
-//   document.querySelectorAll('.letBut')[i].style.display = 'none'
-// }
-
 //-----------------Sounds-------------------
-// let playSound = function () {
-//   audio.play()
-// }
-
-// document.getElementById('play').addEventListener('click', playSound, false)
